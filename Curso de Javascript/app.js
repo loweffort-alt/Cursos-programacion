@@ -65,9 +65,9 @@ la primera letra de una variable tiene q ser una letra, $, _
 1username = "Alex" //si inserto esto, me da un error
 */
 
-$dollar = "la primera letra de tu variable puede ser un '$'"
-_underscore = "también puedes usar el '_'"
-any_letter = "y cualquier letra, NO puedes iniciar con número"
+let $dollar ="la primera letra de tu variable puede ser un '$'"
+let _underscore = "también puedes usar el '_'"
+let any_letter = "y cualquier letra, NO puedes iniciar con número"
 
 console.log($dollar, _underscore, any_letter)
 
