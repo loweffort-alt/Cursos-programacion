@@ -1,0 +1,143 @@
+*{ /*esto es con el propósito de resetear el diseño de la página por defecto */
+    margin: 0;
+    padding: 0;
+}
+
+/*Para afectar a los elementos no hace falta poner nada*/
+body {
+    background: rgb(45, 52, 54);
+}
+header{
+    background: rgb(0, 136, 109);
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+footer{
+    clear: both;
+    color: white;
+    text-align: center;
+}
+time{
+    color: rgb(178, 190, 195);
+    display: block;
+    text-align: right;
+    padding: 0px 5px;
+}
+aside{
+    color: turquoise;
+    width: 350px;
+    margin: 15px 0px;
+    padding: 0px 10px;
+    float: right;
+    text-align: center;
+}
+h2{
+    font-weight: 500;
+    font-size: 18px; 
+    margin: 5px 0;
+    padding: 5px 5px;   
+}
+section{
+    margin: 15px 0px;
+    width: 600px;
+    text-align: left;
+    float: left;
+    
+}
+blockquote{
+    margin: 50px 0px;
+}
+
+/* Para afectar a los id, usas # antes del nombre del id 
+Además q un id es único y sirve para afectar una zona específica de la página*/
+#navegacion {
+    font: bold 14px sans-serif;
+    background: rgba(86, 102, 101, 0.623); color: rgb(255, 255, 255);
+    padding: 15px;
+    padding-top: 5px; padding-bottom: 5px;
+    text-align: left;
+}
+#navegacion li{ /*aquí estoy creando la ruta de 'sólo afecta a los li que esten dentro de #navegación*/
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana;
+    display: inline-block; /*hago q esté en horizontal pero siguen siendo bloques independientes*/
+}
+#ContentOne {
+    color: white;
+    padding: 15px;
+}
+#ContentTwo {
+    color: white;
+    padding: 15px;
+}
+#ContentThree {
+    color: white;
+    padding: 15px;
+}
+#link_article {
+    padding: 5px;
+}
+
+#link1 {
+    padding: 5px;
+    display: block;
+    float: left;
+}
+#link2 {
+    padding: 5px;
+    display: block;
+    float: right;
+}
+
+/* Para afectar los class, usas el . antes del nombre de clase 
+Además que class es como un id pero agrupado*/
+.articlefoot {
+    padding: 10px;
+    text-align: right;
+    background: rgb(99, 110, 114)
+}
+.Titles{
+    font-size: 20px; /* este atributo sirve para cambiar el tamaño de letra */
+    background: rgba(0, 184, 147, 0.63);
+    font-family: sans-serif; /*Para cambiar el tipo de fuente*/
+    font-weight:bold; /*Para ponerlo más o menos en negrita*/
+    margin: 5px 0px;
+}
+.article {
+    padding: 0px;
+    margin-bottom: 15px;
+    background: rgb(45, 52, 54);
+}
+.agrupar{ /* es el div */
+    width: 1000px; /*es el ancho de mi div*/
+    border: 3px solid black;
+    margin: 30px auto; /*margenes automáticos*/ /*consideramos los 50px en el eje y, el auto en el eje x*/
+    padding: 40px; /*podemos decir q el margen es del borde hacia afuera y el padding del borde hacia adentro*/
+    background: rgb(41, 41, 41)
+}
+.block {
+    display: inline-block;
+}
+/* Para afectar a algunos atributos en específico usas el 
+'nombre_del_elemento[atributo]' */
+blockquote[cite] {
+    background: rgb(99, 110, 114); color:white;
+    text-align: left;
+}
+img[src] {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 0px;
+}
+/*Para afectar a tooodos los elementos de la página se usa un * */
+/* * {background: brown; color: chartreuse;} */
+
+header, section, footer, aside, nav, article, hgroup {
+    display: block; /*ésto es para asegurarme que todos los elementos sean en bloque*/
+
+}
+

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html> 
+
+<html lang="es"> 
+    <head> 
+        <meta charset="utf-8" 1/> 
+        <title>CSS</title> 
+        <meta name="description" content="Ésta es mi primera página web" /> 
+        <meta name="author" content="Alex" />
+        <meta name="keywords" content="Mi primer título, mi primera página, página web"/>
+        <link rel="stylesheet" href="style.css"> <!--Aquí linkeo un archivo nuevo q contiene todos los estilos q quiero en mi html-->
+        <!--En lugar de escribir style en cada línea, podemos hacerlo desde head y afectar a toda nuestra página-->
+        <style> 
+            /* Para afectar a los elementos no hace falta poner nada*/
+            /* html {background: rgb(41, 41, 41);}
+            header{background: rgb(96, 194, 233);}
+            footer{background: rgb(204, 204, 204);}
+            time{background: black; color: white;}
+            aside{color: turquoise;} */
+            /* Para afectar a los id, usas # antes del nombre del id 
+            Además q un id es único y sirve para afectar una zona específica de la página*/
+            /* #navegacion {background: rgba(86, 102, 101, 0.623); color: rgb(255, 255, 255);}
+            #ContentOne {background:rgb(17, 107, 101); color: rgb(255, 255, 255);}
+            #ContentTwo {background: rgba(139, 46, 112, 0.74); color:rgb(255, 255, 255)}
+            #Lorem {color: thistle;} */
+            /* Para afectar los class, usas el . antes del nombre de clase 
+            Además que class es como un id pero agrupado*/
+            /* .articlefoot {background: rgba(17, 107, 101, 0.459); color: rgb(255, 255, 255);}
+            .Titles{background: rgba(255, 99, 71, 0.836);}
+            .link{color: orange; background: white;} */
+            /* Para afectar a algunos atributos en específico usas el 
+           'nombre_del_elemento[atributo]' */
+           /* blockquote[cite] {background: rgb(206, 206, 206); color:rgb(27, 119, 155)} */
+            /*Para afectar a tooodos los elementos de la página se usa un * */
+            /* * {background: brown; color: chartreuse;} */ 
+        </style>
+    
+    
+    </head>    
+    <body>
+        <div class="agrupar"> <!--Sirven para crear divisiones-->
+            <header>
+                <h1>Mi Blog</h1> 
+            </header>
+            
+            <!--PANEL DE NAVEGACIÓN-->
+            <nav id="navegacion"> 
+                <ul> 
+                    <li>PRINCIPAL</li> 
+                    <li>AYUDA</li>
+                    <li>CONTACTO</li>
+                </ul>
+            </nav>
+    
+            <!--CONTENIDO DIVIDIDO POR SECCIONES-->
+            <section class="block">
+                <article class= "article"> 
+                    <hgroup class="Titles"> 
+                        <h1>Haber si me contestan los weones</h1>
+                        <h2>Subtítulo del primer artículo</h2>
+                    </hgroup>
+                    <time datetime="24-03-2021">Publicado 24-03-2021</time> 
+                    <p id="ContentOne">
+                        Hace un par de minutos eh comprado unos parlantes pequeños
+                        <small>espero q me los traigan mañana a primera hora :)</small>, 
+                        los hdp no traen mi pedido y ya van a pasar varios días, les voy a dejar una review funandolos a cagar
+                    </p>
+                    <img src="images/gdfsdfsdg.jpg"/> 
+                    <footer class="articlefoot"> 
+                        <p>Comentarios (0)</p>
+                    </footer>
+                    <address id="link_article"> 
+                        <a href="http://google.com">Vamonos pa google mi rey</a> 
+                    </address>
+                </article>
+                <article class= "article">
+                    <hgroup class="Titles"> 
+                        <h1>Me contestaron los weones po</h1>
+                        <h2>Subtítulo del <small>segundo</small> artículo</h2>
+                    </hgroup>
+                    <time datetime="24-03-2021">Publicado 24-03-2021</time>
+                    <p id="ContentTwo">
+                        Los weones me contestaron rápido <small>texto chiquito por etiqueta small </small> 
+                        pero espero q eso pase :c 
+                    </p>
+                    <p id="ContentThree"> 
+                        <span>|éste texto debería ser editado posteriormente en CSS ya q está entre 2 span| </span> 
+                        dolorum adipisci cum soluta aliquid laborum, <cite>|LA WEA ESTA ES UNA CITA|</cite>
+                        si pongo lorem seguido por un número, me muestra la cantidad de letras random q haya puesto
+                    </p>
+                    <img src="https://i.ytimg.com/vi/QRr9qRJ-DoM/hqdefault.jpg" />
+                    <footer class="articlefoot">
+                        <p>Comentarios (10)</p>
+                    </footer>
+                </article>
+            </section>
+    
+            <!--ÉSTA ES LA BARRA LATERAL O UNA SECCIÓN Q TENDRÁ RELACIÓN CON LA SECCIÓN PRINCIPAL-->
+            <aside class="block"> 
+                <blockquote cite="http://faztweb.com"> 
+                    Mensaje 1
+                </blockquote>
+                <blockquote cite="http://facebook.com/faztweb">
+                    Mensaje 2
+                </blockquote>
+                Archivo
+                Acerca De
+            </aside>
+    
+            <!-- PIE DE PÁGINA -->
+            <footer>
+                Derechos Reservados 2020-2021 
+            </footer>
+            <address>
+                <a id="link1" href="https://developer.mozilla.org/es/docs/Web/HTML">Dale aquí mi rey si quieres ver más etiquetas</a>
+                <a id="link2" href="https://www.w3schools.com/html/">Aquí ves etiquetas, pero más sencillo</a>    
+            </address>
+            </div>
+   
+        </div> 
+    
+    </body>
+</html>
+

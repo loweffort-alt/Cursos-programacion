@@ -1,0 +1,102 @@
+<!--Usamos las etiquetas para indicar qué sección es cada parte de nuestro código-->
+<!--TENEMOS Q TENER EN CUENTA LA VERSIÓN DE HTML Q ESTAMOS USADNO-->
+
+<!DOCTYPE html> <!--Etiqueta para avisar q se usará HTML5-->
+
+<!--Atributo de las etiquetas HMTL permiten dar propiedades específicas de html-->
+<html lang="es"> <!--lang de language y es de español, indicas el idioma de tu página-->
+    <head> 
+        <meta charset="utf-8" 1/> <!--Éste meta sirve para poder usar distintos caracteres, emoticonos incluídos-->
+        <title>Nombre de la pestaña</title> <!--Etiqueta título, ésta etiqueta es la única visible por el usuario-->
+        <!--'meta' sirve para dar más informacion al buscador (google) de nuestro contenido en general-->
+        <meta name="description" content="Ésta es mi primera página web" /> <!--No tiene un par, pero sirve para usar otros atributos o metadatos-->
+        <meta name="author" content="Alex" />
+        <meta name="keywords" content="Mi primer título, mi primera página, página web"/>
+    </head>    
+    <body>
+        <!--TÍTULO DEL BLOG-->
+        <header style="background: skyblue"> <!--ésta manera de poner el style se llama Inline Styles, estilos directamente en la linea de código-->
+            <h1>Mi Blog</h1> <!--Etiqueta encabezado (el más stándar)-->
+        </header>
+        
+        <!--PANEL DE NAVEGACIÓN-->
+        <nav>
+            <ul> <!--Viene del ingles unorderlist = lista desordenada-->
+                <li>PRINCIPAL</li> <!--li = list item-->
+                <li>AYUDA</li>
+                <li>CONTACTO</li>
+            </ul>
+        </nav>
+
+        <!--CONTENIDO DIVIDIDO POR SECCIONES-->
+        <section>
+            <article> <!--Etiqueta para insertar artículos-->
+                <hgroup> <!--Agrupa a los títulos y subtítulos (hs) en un mismo artículo, para tener más orden-->
+                    <h1>Haber si me contestan los weones</h1>
+                    <h2>Subtítulo del primer artículo</h2>
+                </hgroup>
+                <time datetime="24-03-2021">Publicado 24-03-2021</time> <!--time es la etiqueta y datetime el atributo-->
+                <p>
+                    Hace un par de minutos eh comprado unos parlantes pequeños
+                    y espero q me los traigan mañana a primera hora :)
+                </p>
+                <footer> <!--Es el pie de página de algún elemento, sea artículo, página web, etc-->
+                    <p>Comentarios (0) ésto lo pongo como pie de página del artículo gracias a footer</p>
+                <img src="images/gdfsdfsdg.jpg"/> <!--la etiqueta img sirve para insertar una imagen y el atributo src (source) es para indicar la dirección de donde quiero q saque la imágen-->
+                </footer>
+                <address> <!--Gracias a ésto, indicamos q vamos a escribir una dirección web-->
+                    <a href="http://google.com">Vamonos pa google mi rey</a> <!--GRACIAS A ESTO PODEMOS PONER ENLACES-->
+                </address>
+            </article>
+            <article>
+                <hgroup> <!--Agrupa a los títulos y subtítulos (hs) en un mismo artículo, para tener más orden-->
+                    <h1>Me contestaron los weones po</h1>
+                    <h2>Subtítulo del <small>segundo</small> artículo</h2>
+                </hgroup>
+                <time datetime="24-03-2021">Publicado 24-03-2021</time>
+                <p>
+                    Los weones me contestaron rápido <small>texto chiquito por etiqueta small </small> <!--<small> sirve para hacer pequeño un texto-->
+                    pero espero q eso pase :c 
+                </p>
+                <p> <!--Acá eh puesto un texto de prueba, lo pone en automático el editor de texto, para eso tienes q escribir <p>Lorem20</p> el número indica la cantidad de palabras q quieres-->
+                    <span>|éste texto debería ser editado posteriormente en CSS ya q está entre 2 span| </span> <!--span sirve para luego poder alterarlo en css-->
+                    dolorum adipisci cum soluta aliquid laborum, <cite>|LA WEA ÉSTA ES UNA CITA|</cite> <!--cite sirve para indicar q algo es una cita, lo pone en cursiva-->
+                    si pongo lorem seguido por un número, me muestra la cantidad de letras random q haya puesto
+                </p>
+                <img src="https://i.ytimg.com/vi/QRr9qRJ-DoM/hqdefault.jpg" />
+                <footer>
+                    <p>Comentarios (10)</p>
+                </footer>
+            </article>
+        </section>
+
+        <!--ÉSTA ES LA BARRA LATERAL O UNA SECCIÓN Q TENDRÁ RELACIÓN CON LA SECCIÓN PRINCIPAL-->
+        <aside> 
+            <blockquote cite="http://faztweb.com"> <!--etiqueta q sirve para insertar citas-->
+                Mensaje 1
+            </blockquote>
+            <blockquote cite="http://facebook.com/faztweb">
+                Mensaje 2
+            </blockquote>
+            Archivo
+            *ésto es lo q debería ir en la barra lateral*
+            Acerca De
+        </aside>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            Derechos Reservados 2020-2021 *ésto supuestamente es el pie de página de la página web*
+            <address>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML">Dale aquí mi rey si quieres ver más etiquetas</a>
+                <a href="https://www.w3schools.com/html/">Aquí ves etiquetas, pero más sencillo</a>    
+            </address>
+        </footer>        
+    
+    
+    </body>
+</html>
+
+
+
+
+
