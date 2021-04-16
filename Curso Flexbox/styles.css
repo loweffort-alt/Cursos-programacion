@@ -1,0 +1,101 @@
+body {background: #FFF2A7;}
+
+.contenedor {
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    padding: 10px;
+    border: 10px solid black;
+    margin: 20px;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;  /*flex sirve para poder hacer cajas flexibles */
+
+    /* FLEXBOX EN EL CONTENEDOR */
+
+    /* flex-direction: row; /* row para ponerlo en fila y column en columna,
+    Esto condiciona el justify, align y flex-basis
+
+    flex-wrap: nowrap; wrap o nowrap sirve para adaptar la organización de los objetos al modificar el tamaño de caja */
+
+    flex-flow: row nowrap; /*el primer valor de flex-flow es el flex-direction y el segundo es el flex-wrap
+    y sirve para poner ambos flex de arriba */
+
+    justify-content: center; /*me permite poscicionar elementos de una caja, sin embargo,
+        no puedes tener 2 elementos dentro de una misma caja. Dentro de justify-content tenemos:
+        EJE X CON FILAS / EJE Y CON COLUMNAS
+        flex-start      =   Coloca el contenido a la izquierda
+        flex-end        =   Coloca el contenido a la derecha
+        center          =   Centra el contenido en la caja
+        space-around    =   Separa los elementos con el mismo espaciado
+        space-between   =   Sólo crea espaciado entre los elementos, no con la caja */
+
+    align-items: center; /*es lo mismo q justify-content pero en eje vertical
+        Tampoco puedes tener 2 elementos dentro de una misma caja.
+        EJE Y CON FILAS / EJE X CON COLUMNAS
+        flex-start  =   Coloca el elemento en la parte superior de la caja
+        flex-end    =   Coloca el elemento en la parte inferior
+        center      =   Centra en el eje Y de la caja
+        stretch     =   Se usa siempre con "height:auto" en la caja y ocupa lo máximo posible de la caja eje Y
+        baseline    =   Se usa siempre con "height:auto" en la caja y ocupa lo menos posible de la caja eje Y*/
+
+    /*align-content: center; /*a diferencia de align-items, este se usa solo cuando tenemos varias filas
+        es decir, el primero es para una sola fila de elementos y este es para 2 o más filas de elementos.
+        EJE Y CON FILAS / EJE X CON COLUMNAS
+        flex-start      =   Coloca el contenido arriba
+        flex-end        =   Coloca el contenido abajo
+        center          =   Centra el contenido en la caja
+        space-around    =   Separa los elementos con el mismo espaciado
+        space-between   =   Sólo crea espaciado entre los elementos, no con la caja */
+
+
+}
+
+.elemento {
+    color: #fff;
+    margin: 5px;
+    background: #E67E22;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+
+    /* FLEXBOX EN EL ELEMENTO */
+    /*flex-basis: 50px; esto puede servir como reemplazo a width o height 
+    dependiendo del flex-direction. Esto es súper útil para crear interfaces q se adapten de tamaño*/
+
+    /* Crecimiento: píxeles adicionales a los determinados (en width, height u otros) para q los elementos ocupen la caja entera */
+    flex-grow: 1; /* es un valor q modifica el crecimiento respecto al crecimiento de los demás elementos de una caja, para entende mejor ver el sgte vídeo: https://www.youtube.com/watch?v=F-KCncXMPk0&t=408s minuto 40 */
+    flex-shrink: 1; /* es análogo al flex grow, pero en vez de crecimiento es decrecimiento (píxeles q falten para completar la medida determinada)*/
+
+    /* También puedes simplificar estos flex con un único comando */
+    /*flex: 1 1 50px; */
+    /*ésto representa el sgte orden: flex-grow flex-shrink flex-basis */
+}
+
+.elemento2 {
+    /*Funciona solo si hay más píxeles q los q has determinado*/
+    /*flex-grow: 3; /*este crecimiento es respecto a .elementos, ahí el grow es 1 y del elemento 2 es 3,
+    ésto significa q su crecimiento es 3 veces más grande q el crecimiento de los demás elementos, juega con ésto para q entiendas más */
+
+    /*Funciona solo si hay menos píxeles q los q has determinado*/
+    /*flex-shrink: 2; /* este decrecimiento es 2 veces más q el decrecimiento de los demás elementos*/
+
+    order: 4; /*modifica el orden de elementos visualmente*/
+}
+
+.elemento4 {
+    order: 1; /* sirve para no tener q modificar el orden en el código html */
+    align-self: flex-start; /* Sirve para acomoda un elemento específico
+    EJE Y CON FILAS / EJE X CON COLUMNAS
+    flex-start  =   Coloca el elemento en la parte superior de la caja
+    flex-end    =   Coloca el elemento en la parte inferior
+    center      =   Centra en el eje Y de la caja
+    stretch     =   Se usa siempre con "height:auto" en la caja y ocupa lo máximo posible de la caja eje Y
+    baseline    =   Se usa siempre con "height:auto" en la caja y ocupa lo menos posible de la caja eje Y*/ 
+}
+
+
+
+
