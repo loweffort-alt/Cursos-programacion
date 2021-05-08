@@ -1,2 +1,2 @@
 # Cursos-programacion
-Cursos de programación que eh hecho
+Cursos de programación autodidacta
